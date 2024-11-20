@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="platform_width">110dp</dimen>
+    <dimen name="platform_height">30dp</dimen>
+    <dimen name="doodler_width">80dp</dimen>
+    <dimen name="doodler_height">110dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+</resources>
