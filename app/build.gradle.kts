@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace = "com.thibault.superjump"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.thibault.superjump"
-        minSdk = 21
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -28,18 +28,23 @@ android {
             )
         }
     }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+    java {
+        toolchain {
+            languageVersion.setValue(
+                JavaLanguageVersion.of(8),
+                property = TODO(),
+                value = TODO()
+            ) // ou 11
+        }
     }
-
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "1.8"
     }
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     // Bibliothèques essentielles
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
