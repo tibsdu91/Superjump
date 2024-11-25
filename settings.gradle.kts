@@ -9,9 +9,9 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven { url = uri("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
     }
 }
-
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -20,10 +20,11 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("libs") {
-            from(files("gradle/libs.versions.toml"))
+            (files("gradle/libs.versions.toml"))
         }
     }
 }
+
 
 rootProject.name = "SuperJump"
 include(":app")
