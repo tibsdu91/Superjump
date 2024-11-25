@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.thibault.superjump"
-    compileSdk = 35
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.thibault.superjump"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
     }
@@ -28,19 +28,11 @@ android {
             )
         }
     }
-    java {
-        toolchain {
-            languageVersion.setValue(
-                JavaLanguageVersion.of(8),
-                property = TODO(),
-                value = TODO()
-            ) // ou 11
-        }
-    }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildToolsVersion = "35.0.0"
+    buildToolsVersion = "33.0.2"
 }
 
 dependencies {
@@ -59,4 +51,6 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
 }
+
