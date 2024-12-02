@@ -4,7 +4,7 @@ import com.doodlejump.*
 import kotlin.math.pow
 import kotlin.math.sqrt
 
-class DurationPlatform(iPos: Vector): Platform(iPos, R.drawable.durationplateform), IUpdate {
+class DurationPlatform(iPos: Vector): Platform(iPos, R.drawable.dangerous_platform_removebg), IUpdate {
 
     private var obs = TimeObservable(100, this);
 

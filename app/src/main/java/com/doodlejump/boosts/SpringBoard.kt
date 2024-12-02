@@ -2,7 +2,7 @@ package com.doodlejump.boosts
 
 import com.doodlejump.*
 
-class SpringBoard(iPos: Vector): GameObject(size, iPos, R.drawable.springboard), IJumpable {
+class SpringBoard(iPos: Vector): GameObject(size, iPos, R.drawable.trampoline_platform_removebg), IJumpable {
 
     companion object {
         val size = Vector(140F, 50F)
