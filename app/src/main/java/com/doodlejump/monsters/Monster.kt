@@ -7,10 +7,10 @@ import com.doodlejump.Player
 
 open class Monster(pos0: Vector, iSize: Vector, type: Int): GameObject(iSize, pos0, type){
 
-    constructor(pos0: Vector) : this(pos0, Vector(217F, 144F), R.drawable.monster)
+    constructor(pos0: Vector) : this(pos0, Vector(217F, 144F), R.drawable.esme_monster)
 
     companion object {
-        val size = Vector(217F, 144F)
+        val size = Vector(180F, 180F)
     }
 
     override fun whenHit(player: Player) {

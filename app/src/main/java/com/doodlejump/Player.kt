@@ -2,7 +2,7 @@ package com.doodlejump
 
 import android.graphics.*
 
-class Player(pos0: Vector): GameObject(Vector(136F, 136F), pos0, R.drawable.jet_bonhome), IUpdate {
+class Player(pos0: Vector): GameObject(Vector(200F, 200F), pos0, R.drawable.jet_bonhome), IUpdate {
 
 
     var acceleration = Vector(0F, GRAVITY)
@@ -70,11 +70,11 @@ class Player(pos0: Vector): GameObject(Vector(136F, 136F), pos0, R.drawable.jet_
         var wd = game.width / GameManager.WIDTH
         var hd = game.height / GameManager.HEIGHT
         if(enabled) {
-            size = Vector(190F, 188F)
-            ressource = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(game.context.resources, R.drawable.jet_bonhome), (size.x * wd).toInt(), (size.y * hd).toInt(), false)
+            size = Vector(200F, 180F)
+            ressource = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(game.context.resources, R.drawable.jet_pack_bonhome), (size.x * wd).toInt(), (size.y * hd).toInt(), false)
             hitable = false
         } else {
-            size = Vector(136F, 136F)
+            size = Vector(200F, 200F)
             ressource = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(game.context.resources, sprite), (size.x * wd).toInt(), (size.y * hd).toInt(), false)
             hitable = true
         }
